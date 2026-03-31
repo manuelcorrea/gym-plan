@@ -1,1205 +1,467 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaVida Studio — Plan de Negocio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<!-- PASSWORD GATE -->
-<div id="gate" class="gate">
-    <div class="gate-content">
-        <div class="gate-logo">🏊‍♀️</div>
-        <h1 class="gate-title">AquaVida Studio</h1>
-        <p class="gate-subtitle">Plan de Negocio & Estudio de Factibilidad</p>
-        <div class="gate-input-wrap">
-            <input type="password" id="magicWord" placeholder="Palabra mágica..." autofocus>
-            <button id="enterBtn">Entrar</button>
-        </div>
-        <p id="gateError" class="gate-error"></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aufit | Plan Aqua Board Colombia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="password-shell" id="password-shell">
+      <div class="password-card">
+        <p class="eyebrow">Acceso privado</p>
+        <h1>Aufit Aqua Board</h1>
+        <p class="password-copy">
+          Esta página resume la oportunidad de escalar Aqua Board en Colombia con un
+          modelo B2B de instalación, certificación y lanzamiento comercial.
+        </p>
+        <form id="password-form" class="password-form">
+          <label for="password" class="sr-only">Contraseña</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Ingresa la contraseña"
+            autocomplete="current-password"
+          />
+          <button type="submit">Entrar</button>
+        </form>
+        <p id="password-error" class="password-error" aria-live="polite"></p>
+      </div>
     </div>
-    <div class="gate-particles"></div>
-</div>
 
-<!-- MAIN CONTENT -->
-<div id="app" class="app hidden">
-
-    <!-- NAV -->
-    <nav class="nav">
-        <div class="nav-brand">🏊‍♀️ AquaVida Studio</div>
-        <div class="nav-links">
-            <a href="#resumen">Resumen</a>
-            <a href="#concepto">Concepto</a>
-            <a href="#viabilidad">Viabilidad</a>
-            <a href="#mercado">Mercado</a>
-            <a href="#competencia">Competencia</a>
-            <a href="#ubicacion">Ubicación</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#financiero">Financiero</a>
-            <a href="#marketing">Marketing</a>
-            <a href="#legal">Legal</a>
+    <main id="app" class="app hidden">
+      <section class="hero">
+        <div class="hero-top">
+          <p class="eyebrow">Aufit confidential strategy</p>
+          <span class="badge">Colombia rollout 2026-2028</span>
         </div>
-        <button class="nav-toggle" id="navToggle">☰</button>
-    </nav>
-
-    <!-- HERO -->
-    <header class="hero" id="resumen">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <span class="hero-tag">Estudio de Factibilidad 2026</span>
-            <h1 class="hero-title">AquaVida Studio</h1>
-            <p class="hero-desc">El primer centro boutique de fitness acuático y bienestar integral en Cali, Colombia</p>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-num">$414M</span>
-                    <span class="stat-label">Inversión Inicial (COP)</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-num">18 meses</span>
-                    <span class="stat-label">Punto de Equilibrio</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-num">42%</span>
-                    <span class="stat-label">ROI Proyectado (Año 3)</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-num">2.5M+</span>
-                    <span class="stat-label">Población Cali</span>
-                </div>
+        <div class="hero-grid">
+          <div>
+            <h1>
+              Aqua Board puede convertirse en un sistema replicable de wellness
+              acuático para hoteles, universidades y clubes premium.
+            </h1>
+            <p class="hero-copy">
+              La jugada no es vender una tabla suelta. La jugada es vender un
+              lanzamiento completo: 10 plataformas, certificación, kit operativo,
+              evento inaugural, piezas de marketing y seguimiento de calidad para que
+              cada sede pueda operar clases por su cuenta.
+            </p>
+            <div class="hero-actions">
+              <a href="#modelo" class="button primary">Ver modelo de negocio</a>
+              <a href="#mercado" class="button secondary">Ver mercado objetivo</a>
             </div>
+          </div>
+          <div class="hero-panel">
+            <div class="metric">
+              <span class="metric-value">$86M COP</span>
+              <span class="metric-label">Ingreso inicial estimado por sede</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">$30M COP</span>
+              <span class="metric-label">Utilidad bruta estimada por sede inicial</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">4 ciudades</span>
+              <span class="metric-label">Bogotá, Medellín, Cartagena y Cali</span>
+            </div>
+          </div>
         </div>
-    </header>
+      </section>
 
-    <!-- EXECUTIVE SUMMARY -->
-    <section class="section" id="concepto">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">01</span>
-                <h2>Concepto de Negocio</h2>
-                <p>Un modelo único que no existe en Cali</p>
-            </div>
-
-            <div class="concept-grid">
-                <div class="concept-card primary">
-                    <h3>🎯 La Oportunidad</h3>
-                    <p>Cali, la capital de la salsa y el deporte en Colombia, carece de un concepto de fitness boutique que combine <strong>ejercicios acuáticos</strong> con clases de alta intensidad estilo Orange Theory. No existe un solo estudio que ofrezca aqua fitness, aqua yoga, aqua cycling y clases funcionales en piscina bajo un modelo de suscripción premium.</p>
-                </div>
-                <div class="concept-card">
-                    <h3>🏠 El Formato</h3>
-                    <p>Una <strong>casa grande con piscina amplia</strong> en zona residencial premium, reconvertida en centro de bienestar. Ambiente íntimo, exclusivo, con capacidad limitada por clase (máx. 15-20 personas). Similar al modelo de casas-estudio que funcionan en EE.UU. y Europa.</p>
-                </div>
-                <div class="concept-card">
-                    <h3>💳 Modelo de Ingresos</h3>
-                    <p><strong>Suscripción mensual</strong> (membresía ilimitada o por paquete de clases) + <strong>clases sueltas (ad-hoc)</strong> para visitantes y principiantes. Modelo probado por Orange Theory con retención superior al 70%.</p>
-                </div>
-                <div class="concept-card">
-                    <h3>🌊 Diferenciador Clave</h3>
-                    <p><strong>Clases que NO encuentras en ningún otro lugar de Cali:</strong> Aqua HIIT, Aqua Yoga, Aqua Cycling, Deep Water Running, Hidroterapia Funcional, Hot Pilates (exterior), Aerial Yoga sobre piscina, y Barre Aquático.</p>
-                </div>
-            </div>
-
-            <!-- VIDEO REFERENCE -->
-            <div class="video-ref">
-                <div class="video-ref-content">
-                    <h3>📹 Referencia Visual: AquaFit</h3>
-                    <p>Nuestro concepto se inspira en el aquafit de alta intensidad, combinando ejercicios funcionales en piscina con música, energía de grupo y resultados medibles.</p>
-                    <a href="https://www.instagram.com/reel/DN1JpF4Xjsd/" target="_blank" class="btn btn-outline">Ver referencia en Instagram →</a>
-                </div>
-            </div>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Tesis</p>
+          <h2>Por qué esta oportunidad sí puede escalar</h2>
         </div>
-    </section>
-
-    <!-- FEASIBILITY DASHBOARD -->
-    <section class="section section-alt" id="viabilidad">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">02</span>
-                <h2>Viabilidad del Negocio</h2>
-                <p>Lectura rápida para decidir si abrir, dónde abrir y bajo qué condiciones</p>
-            </div>
-
-            <div class="feasibility-grid">
-                <div class="feasibility-card score">
-                    <span class="mini-tag">Lectura ejecutiva</span>
-                    <h3>Score de factibilidad</h3>
-                    <div class="feasibility-score">8.4/10</div>
-                    <p>La oportunidad es real si se mantiene una propuesta premium, se asegura una casa con piscina funcional y se controla el aforo con reservas tipo boutique.</p>
-                </div>
-                <div class="feasibility-card">
-                    <span class="mini-tag">Demanda</span>
-                    <h3>Mercado suficiente</h3>
-                    <p>El nicho objetivo en estratos 4-6 puede sostener un estudio de 120 a 180 miembros activos si la experiencia se percibe como exclusiva, segura y diferente a un gym tradicional.</p>
-                </div>
-                <div class="feasibility-card">
-                    <span class="mini-tag">Oferta</span>
-                    <h3>Vacío competitivo</h3>
-                    <p>No aparece un competidor boutique enfocado en aqua fitness con modelo de membresía + clases sueltas. La novedad ayuda a PR, contenido y referidos durante los primeros 12 meses.</p>
-                </div>
-                <div class="feasibility-card">
-                    <span class="mini-tag">Riesgo principal</span>
-                    <h3>El inmueble define el proyecto</h3>
-                    <p>Si la casa no permite uso comercial, parqueo, buena acústica, circulación seca/húmeda y operación segura de piscina, el concepto pierde margen y reputación desde el día uno.</p>
-                </div>
-            </div>
-
-            <div class="decision-panel">
-                <div class="decision-card">
-                    <h3>✅ Go si se cumple esto</h3>
-                    <ul>
-                        <li>Casa con piscina operable de mínimo 8m x 15m y 10 parqueaderos</li>
-                        <li>Cambio o compatibilidad de uso de suelo confirmado antes de firmar contrato largo</li>
-                        <li>Meta preapertura de 70 membresías fundadoras vendidas</li>
-                        <li>Ticket promedio mensual superior a $285.000 COP</li>
-                    </ul>
-                </div>
-                <div class="decision-card warning">
-                    <h3>⚠️ No-Go temporal si pasa esto</h3>
-                    <ul>
-                        <li>La casa elegida requiere obra estructural mayor o climatización costosa</li>
-                        <li>La piscina solo sirve para recreación y no para circuitos grupales</li>
-                        <li>El barrio tiene quejas probables por ruido o movilidad</li>
-                        <li>No se consigue instructor líder con experiencia en agua + ventas + comunidad</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="unit-economics">
-                <h3>🎯 Unidad económica objetivo</h3>
-                <div class="unit-grid">
-                    <div class="unit-item">
-                        <strong>Break-even operativo:</strong> 117-150 miembros, según mezcla de planes y ocupación real
-                    </div>
-                    <div class="unit-item">
-                        <strong>Capacidad ideal:</strong> 8-10 clases/día, 15 personas promedio por clase, ocupación de 62%-70%
-                    </div>
-                    <div class="unit-item">
-                        <strong>Motor de margen:</strong> membresías ilimitadas, paquetes de 8 clases y eventos corporativos
-                    </div>
-                    <div class="unit-item">
-                        <strong>Motor de adquisición:</strong> founders plan, referidos y contenido visual diferencial
-                    </div>
-                </div>
-            </div>
+        <div class="card-grid three">
+          <article class="card">
+            <h3>1. Producto novedoso, visual y vendible</h3>
+            <p>
+              Aqua Board combina yoga, balance, core y experiencia premium. Es ideal
+              para contenido en redes, eventos de bienestar y programación diferencial
+              dentro de una piscina existente.
+            </p>
+          </article>
+          <article class="card">
+            <h3>2. Aufit no compite como fabricante</h3>
+            <p>
+              El distribuidor resuelve abastecimiento. Aufit gana como operador de
+              lanzamiento, certificador y socio comercial que convierte una piscina en
+              una nueva línea de ingresos o de posicionamiento.
+            </p>
+          </article>
+          <article class="card">
+            <h3>3. Modelo replicable tipo franquicia ligera</h3>
+            <p>
+              No hace falta abrir sedes propias. Cada cliente compra el sistema,
+              capacita a su equipo y luego opera las clases internamente mientras Aufit
+              mantiene estándares, auditoría y soporte.
+            </p>
+          </article>
         </div>
-    </section>
+      </section>
 
-    <!-- MARKET ANALYSIS -->
-    <section class="section" id="mercado">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">03</span>
-                <h2>Análisis de Mercado</h2>
-                <p>Cali: una ciudad lista para el fitness premium</p>
-            </div>
-
-            <div class="market-grid">
-                <div class="market-card">
-                    <div class="market-icon">👥</div>
-                    <h4>Demografía</h4>
-                    <ul>
-                        <li><strong>Población:</strong> 2.5 millones (área metro: 3.5M)</li>
-                        <li><strong>Estratos 4-6:</strong> ~25% de la población</li>
-                        <li><strong>Edad target:</strong> 25-55 años</li>
-                        <li><strong>Cultura fitness:</strong> Cali es reconocida como ciudad deportiva (ciclismo, natación, salsa)</li>
-                    </ul>
-                </div>
-                <div class="market-card">
-                    <div class="market-icon">📈</div>
-                    <h4>Tendencias</h4>
-                    <ul>
-                        <li>Crecimiento del fitness boutique en LATAM: <strong>15-20% anual</strong></li>
-                        <li>Post-pandemia: preferencia por <strong>grupos pequeños</strong> y espacios abiertos</li>
-                        <li>Boom del wellness: yoga, meditación, hidroterapia</li>
-                        <li>Clima de Cali (25-30°C todo el año): <strong>ideal para actividades acuáticas al aire libre</strong></li>
-                    </ul>
-                </div>
-                <div class="market-card">
-                    <div class="market-icon">🎯</div>
-                    <h4>Mercado Objetivo</h4>
-                    <ul>
-                        <li><strong>Primario:</strong> Mujeres 28-50 años, estratos 4-6</li>
-                        <li><strong>Secundario:</strong> Hombres 30-50 años, profesionales</li>
-                        <li><strong>Terciario:</strong> Adultos mayores (aqua fitness terapéutico)</li>
-                        <li><strong>Nicho:</strong> Embarazadas, rehabilitación deportiva</li>
-                    </ul>
-                </div>
-                <div class="market-card">
-                    <div class="market-icon">💰</div>
-                    <h4>Capacidad de Pago</h4>
-                    <ul>
-                        <li>Gym convencional en Cali: $80K-$180K COP/mes</li>
-                        <li>Gym boutique (CrossFit, yoga): $150K-$350K COP/mes</li>
-                        <li><strong>Nuestro rango target: $200K-$450K COP/mes</strong></li>
-                        <li>Clase suelta: $35K-$55K COP</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- CALI ADVANTAGE -->
-            <div class="highlight-box">
-                <h3>☀️ La Ventaja Climática de Cali</h3>
-                <p>A diferencia de Bogotá o Medellín, Cali tiene un <strong>clima cálido todo el año (25-32°C)</strong>, lo que hace que las actividades acuáticas al aire libre sean viables los 365 días. Esto es una ventaja competitiva masiva: no necesitamos piscina climatizada, reduciendo costos operativos significativamente.</p>
-            </div>
+      <section id="mercado" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Mercado objetivo</p>
+          <h2>Dónde vender primero en Colombia</h2>
         </div>
-    </section>
-
-    <!-- COMPETITION -->
-    <section class="section" id="competencia">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">04</span>
-                <h2>Análisis de Competencia</h2>
-                <p>Mapeo completo del fitness en Cali</p>
-            </div>
-
-            <!-- COMPETITION TABLE -->
-            <div class="table-wrap">
-                <table class="comp-table">
-                    <thead>
-                        <tr>
-                            <th>Competidor</th>
-                            <th>Tipo</th>
-                            <th>Precio/Mes</th>
-                            <th>Piscina</th>
-                            <th>Clases Acuáticas</th>
-                            <th>Modelo</th>
-                            <th>Amenaza</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Bodytech</strong></td>
-                            <td>Cadena grande</td>
-                            <td>$120K-$250K</td>
-                            <td class="no">✗</td>
-                            <td class="no">✗</td>
-                            <td>Membresía</td>
-                            <td><span class="threat medium">Media</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Smart Fit</strong></td>
-                            <td>Low-cost</td>
-                            <td>$60K-$100K</td>
-                            <td class="no">✗</td>
-                            <td class="no">✗</td>
-                            <td>Membresía</td>
-                            <td><span class="threat low">Baja</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>CrossFit boxes</strong><br><small>(Fenix, Legión, etc.)</small></td>
-                            <td>Boutique</td>
-                            <td>$180K-$300K</td>
-                            <td class="no">✗</td>
-                            <td class="no">✗</td>
-                            <td>Membresía</td>
-                            <td><span class="threat medium">Media</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Estudios de Yoga</strong><br><small>(Yoga Cali, Shanti, etc.)</small></td>
-                            <td>Boutique</td>
-                            <td>$120K-$250K</td>
-                            <td class="no">✗</td>
-                            <td class="no">✗</td>
-                            <td>Paquetes</td>
-                            <td><span class="threat low">Baja</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Pilates Studios</strong><br><small>(Body Balance, etc.)</small></td>
-                            <td>Boutique</td>
-                            <td>$200K-$400K</td>
-                            <td class="no">✗</td>
-                            <td class="no">✗</td>
-                            <td>Paquetes</td>
-                            <td><span class="threat low">Baja</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Clubes Sociales</strong><br><small>(Club Colombia, Club Cali)</small></td>
-                            <td>Club privado</td>
-                            <td>$300K-$800K+</td>
-                            <td class="yes">✓</td>
-                            <td class="partial">Básico</td>
-                            <td>Membresía anual</td>
-                            <td><span class="threat medium">Media</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Escuelas de Natación</strong></td>
-                            <td>Academia</td>
-                            <td>$100K-$200K</td>
-                            <td class="yes">✓</td>
-                            <td class="partial">Solo natación</td>
-                            <td>Mensual</td>
-                            <td><span class="threat low">Baja</span></td>
-                        </tr>
-                        <tr class="highlight-row">
-                            <td><strong>🌊 AquaVida Studio</strong></td>
-                            <td>Boutique Acuático</td>
-                            <td>$200K-$450K</td>
-                            <td class="yes">✓</td>
-                            <td class="yes">✓ Completo</td>
-                            <td>Suscripción + Ad-hoc</td>
-                            <td><span class="threat us">Nosotros</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="comp-insight">
-                <h3>💡 Insight Clave</h3>
-                <p><strong>Ningún competidor en Cali ofrece un programa estructurado de fitness acuático boutique.</strong> Los clubes sociales tienen piscina pero no clases especializadas. Los gyms boutique no tienen piscina. Estamos creando una categoría completamente nueva en el mercado caleño.</p>
-            </div>
-
-            <!-- POSITIONING MAP -->
-            <div class="positioning">
-                <h3>Mapa de Posicionamiento</h3>
-                <div class="position-map">
-                    <div class="axis-label top">Premium</div>
-                    <div class="axis-label bottom">Económico</div>
-                    <div class="axis-label left">Tradicional</div>
-                    <div class="axis-label right">Innovador</div>
-                    <div class="position-dot smartfit" title="Smart Fit">SF</div>
-                    <div class="position-dot bodytech" title="Bodytech">BT</div>
-                    <div class="position-dot crossfit" title="CrossFit">CF</div>
-                    <div class="position-dot yoga" title="Yoga Studios">YG</div>
-                    <div class="position-dot clubs" title="Clubes Sociales">CS</div>
-                    <div class="position-dot pilates" title="Pilates">PL</div>
-                    <div class="position-dot aquavida" title="AquaVida Studio">AV</div>
-                </div>
-            </div>
+        <div class="city-grid">
+          <article class="city-card">
+            <h3>Bogotá</h3>
+            <p class="city-subtitle">Bienestar corporativo, hoteles urbanos y clubes</p>
+            <ul>
+              <li>Hoteles business y lifestyle con rooftop o piscina climatizada.</li>
+              <li>Universidades premium con enfoque en bienestar estudiantil.</li>
+              <li>Clubes sociales, cajas de compensación y complejos residenciales high-end.</li>
+            </ul>
+          </article>
+          <article class="city-card">
+            <h3>Medellín</h3>
+            <p class="city-subtitle">Turismo internacional, rooftops y wellness boutique</p>
+            <ul>
+              <li>Hoteles de El Poblado, Laureles y Rionegro con huésped internacional.</li>
+              <li>Operadores wellness, spas y clubes deportivos premium.</li>
+              <li>Universidades con comunidad activa y eventos de marca.</li>
+            </ul>
+          </article>
+          <article class="city-card">
+            <h3>Cartagena</h3>
+            <p class="city-subtitle">Resorts, lujo y experiencias para turistas</p>
+            <ul>
+              <li>Hoteles vacacionales y resorts que necesitan nuevas actividades poolside.</li>
+              <li>Beach clubs y operadores de hospitalidad con foco en experiencias.</li>
+              <li>Residenciales turísticos y clubes náuticos.</li>
+            </ul>
+          </article>
+          <article class="city-card">
+            <h3>Cali</h3>
+            <p class="city-subtitle">Clubes sociales, universidades y bienestar local</p>
+            <ul>
+              <li>Clubes tradicionales con piscinas activas y calendario de clases.</li>
+              <li>Universidades y centros deportivos con programas de salud integral.</li>
+              <li>Hoteles urbanos que quieren diferenciarse frente a la oferta estándar.</li>
+            </ul>
+          </article>
         </div>
-    </section>
+      </section>
 
-    <!-- LOCATION -->
-    <section class="section section-alt" id="ubicacion">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">05</span>
-                <h2>Ubicación Estratégica</h2>
-                <p>Dónde abrir AquaVida en Cali</p>
-            </div>
-
-            <div class="location-grid">
-                <div class="location-card recommended">
-                    <span class="location-badge">⭐ Recomendado</span>
-                    <h3>Ciudad Jardín</h3>
-                    <div class="location-score">
-                        <span class="score">9.2</span>/10
-                    </div>
-                    <ul>
-                        <li>✅ Zona residencial estrato 5-6</li>
-                        <li>✅ Casas grandes con piscina disponibles</li>
-                        <li>✅ Alta concentración de mercado objetivo</li>
-                        <li>✅ Parqueadero amplio</li>
-                        <li>✅ Cerca de centros empresariales</li>
-                        <li>⚠️ Arriendos altos ($8M-$15M COP/mes)</li>
-                    </ul>
-                    <p class="location-price">Arriendo estimado: <strong>$10M-$15M COP/mes</strong></p>
-                </div>
-
-                <div class="location-card">
-                    <h3>El Peñón / San Antonio</h3>
-                    <div class="location-score">
-                        <span class="score">8.0</span>/10
-                    </div>
-                    <ul>
-                        <li>✅ Zona trendy y bohemia</li>
-                        <li>✅ Alto tráfico de jóvenes profesionales</li>
-                        <li>✅ Buena visibilidad de marca</li>
-                        <li>⚠️ Menos casas con piscina grande</li>
-                        <li>⚠️ Parqueadero limitado</li>
-                        <li>⚠️ Ruido de zona comercial</li>
-                    </ul>
-                    <p class="location-price">Arriendo estimado: <strong>$7M-$12M COP/mes</strong></p>
-                </div>
-
-                <div class="location-card">
-                    <h3>Santa Teresita / Granada</h3>
-                    <div class="location-score">
-                        <span class="score">8.5</span>/10
-                    </div>
-                    <ul>
-                        <li>✅ Estrato 5, alta capacidad de pago</li>
-                        <li>✅ Zona tranquila y segura</li>
-                        <li>✅ Buena accesibilidad vial</li>
-                        <li>✅ Casas amplias disponibles</li>
-                        <li>⚠️ Menos visibilidad que Ciudad Jardín</li>
-                        <li>✅ Arriendos más razonables</li>
-                    </ul>
-                    <p class="location-price">Arriendo estimado: <strong>$6M-$10M COP/mes</strong></p>
-                </div>
-
-                <div class="location-card">
-                    <h3>El Limonar / Valle del Lili</h3>
-                    <div class="location-score">
-                        <span class="score">7.5</span>/10
-                    </div>
-                    <ul>
-                        <li>✅ Zona en crecimiento, estrato 4-5</li>
-                        <li>✅ Conjuntos residenciales grandes</li>
-                        <li>✅ Arriendos más económicos</li>
-                        <li>✅ Fácil acceso desde el sur</li>
-                        <li>⚠️ Menos exclusividad percibida</li>
-                        <li>⚠️ Mayor distancia del centro</li>
-                    </ul>
-                    <p class="location-price">Arriendo estimado: <strong>$5M-$8M COP/mes</strong></p>
-                </div>
-            </div>
-
-            <div class="location-requirements">
-                <h3>🏠 Requisitos del Inmueble</h3>
-                <div class="req-grid">
-                    <div class="req-item">
-                        <strong>Área total:</strong> 400-600 m²
-                    </div>
-                    <div class="req-item">
-                        <strong>Piscina:</strong> Mínimo 8m x 15m (idealmente 10m x 20m)
-                    </div>
-                    <div class="req-item">
-                        <strong>Profundidad:</strong> 1.2m-1.8m (variable para diferentes clases)
-                    </div>
-                    <div class="req-item">
-                        <strong>Zona seca:</strong> Mínimo 80m² para yoga/pilates/funcional
-                    </div>
-                    <div class="req-item">
-                        <strong>Vestidores:</strong> 2 (M/F) con duchas y lockers
-                    </div>
-                    <div class="req-item">
-                        <strong>Parqueadero:</strong> Mínimo 10 espacios
-                    </div>
-                    <div class="req-item">
-                        <strong>Recepción:</strong> Área de bienvenida y juice bar
-                    </div>
-                    <div class="req-item">
-                        <strong>Extras:</strong> Jardín, terraza, zona de descanso
-                    </div>
-                </div>
-            </div>
-
-            <div class="property-funnel">
-                <h3>🔎 Filtro de inmueble ideal</h3>
-                <div class="property-grid">
-                    <div class="property-step">
-                        <span>01</span>
-                        <h4>Preselección</h4>
-                        <p>Buscar 12-15 casas en Ciudad Jardín, Pance y Santa Teresita con piscina rectangular y acceso vehicular cómodo.</p>
-                    </div>
-                    <div class="property-step">
-                        <span>02</span>
-                        <h4>Visita técnica</h4>
-                        <p>Validar tamaño útil de piscina, drenaje, zona seca, vestieres, ruido, privacidad y posibilidad de deck antideslizante.</p>
-                    </div>
-                    <div class="property-step">
-                        <span>03</span>
-                        <h4>Viabilidad legal</h4>
-                        <p>Confirmar uso de suelo, reglamentos del sector, pólizas y permisos de piscina antes de negociar adecuaciones.</p>
-                    </div>
-                    <div class="property-step">
-                        <span>04</span>
-                        <h4>Cierre comercial</h4>
-                        <p>Negociar gracia de arriendo de 2-3 meses para obra, branding y preventa de membresías fundadoras.</p>
-                    </div>
-                </div>
-            </div>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Otros verticales</p>
+          <h2>Lugares que también deberíamos atacar</h2>
         </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section" id="servicios">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">06</span>
-                <h2>Servicios & Clases</h2>
-                <p>Clases únicas que no encuentras en ningún otro lugar de Cali</p>
-            </div>
-
-            <div class="services-grid">
-                <!-- AQUATIC -->
-                <div class="service-category">
-                    <h3>🌊 Clases Acuáticas <span class="badge-unique">Únicas en Cali</span></h3>
-                    <div class="service-list">
-                        <div class="service-item aqua">
-                            <h4>Aqua HIIT</h4>
-                            <p>Entrenamiento de alta intensidad por intervalos en piscina. Quema hasta 800 calorías con bajo impacto articular. Estilo Orange Theory pero en agua.</p>
-                            <span class="duration">45 min</span>
-                            <span class="intensity high">Alta intensidad</span>
-                        </div>
-                        <div class="service-item aqua">
-                            <h4>Aqua Cycling</h4>
-                            <p>Bicicletas sumergibles en piscina. Combinación de cardio y resistencia del agua para tonificación extrema.</p>
-                            <span class="duration">40 min</span>
-                            <span class="intensity high">Alta intensidad</span>
-                        </div>
-                        <div class="service-item aqua">
-                            <h4>Aqua Yoga</h4>
-                            <p>Yoga flotante con tablas de SUP o flotadores. Mejora balance, core y flexibilidad en un ambiente único y relajante.</p>
-                            <span class="duration">60 min</span>
-                            <span class="intensity low">Baja intensidad</span>
-                        </div>
-                        <div class="service-item aqua">
-                            <h4>Deep Water Running</h4>
-                            <p>Correr en aguas profundas con cinturón de flotación. Cero impacto, máximo cardio. Ideal para runners y rehabilitación.</p>
-                            <span class="duration">45 min</span>
-                            <span class="intensity medium">Media intensidad</span>
-                        </div>
-                        <div class="service-item aqua">
-                            <h4>Aqua Barre</h4>
-                            <p>Barre clásico adaptado al agua. Tonificación de piernas, glúteos y core con la resistencia natural del agua.</p>
-                            <span class="duration">50 min</span>
-                            <span class="intensity medium">Media intensidad</span>
-                        </div>
-                        <div class="service-item aqua">
-                            <h4>Aqua Boxing</h4>
-                            <p>Boxeo y kickboxing en piscina. Sacos flotantes y guantes acuáticos. Liberación de estrés y quema calórica masiva.</p>
-                            <span class="duration">45 min</span>
-                            <span class="intensity high">Alta intensidad</span>
-                        </div>
-                        <div class="service-item aqua signature">
-                            <h4>Salsa Splash</h4>
-                            <p>Clase firma de la marca: pasos de salsa, cardio y resistencia acuática. Une identidad caleña, diversión social y alto potencial de viralidad.</p>
-                            <span class="duration">50 min</span>
-                            <span class="intensity medium">Media intensidad</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- DRY CLASSES -->
-                <div class="service-category">
-                    <h3>🧘 Clases en Seco <span class="badge-premium">Premium</span></h3>
-                    <div class="service-list">
-                        <div class="service-item dry">
-                            <h4>Aerial Yoga (sobre piscina)</h4>
-                            <p>Yoga aéreo con telas suspendidas sobre la piscina. Si te caes, ¡caes al agua! Experiencia única e instagrameable.</p>
-                            <span class="duration">60 min</span>
-                            <span class="intensity medium">Media intensidad</span>
-                        </div>
-                        <div class="service-item dry">
-                            <h4>Hot Pilates al Aire Libre</h4>
-                            <p>Pilates reformer en la terraza aprovechando el calor natural de Cali. Sin necesidad de calentar artificialmente.</p>
-                            <span class="duration">50 min</span>
-                            <span class="intensity medium">Media intensidad</span>
-                        </div>
-                        <div class="service-item dry">
-                            <h4>Functional Sunrise</h4>
-                            <p>Entrenamiento funcional al amanecer en el jardín. Kettlebells, TRX, y bodyweight. Energía para todo el día.</p>
-                            <span class="duration">45 min</span>
-                            <span class="intensity high">Alta intensidad</span>
-                        </div>
-                        <div class="service-item dry">
-                            <h4>Meditation & Sound Bath</h4>
-                            <p>Meditación guiada junto a la piscina con cuencos tibetanos. Perfecto para cerrar la semana o complementar entrenamientos.</p>
-                            <span class="duration">45 min</span>
-                            <span class="intensity low">Restaurativa</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SPECIAL -->
-                <div class="service-category">
-                    <h3>⭐ Programas Especiales</h3>
-                    <div class="service-list">
-                        <div class="service-item special">
-                            <h4>Aqua Mamá</h4>
-                            <p>Programa prenatal y postnatal en piscina. Ejercicios seguros para embarazadas y recuperación postparto.</p>
-                        </div>
-                        <div class="service-item special">
-                            <h4>Aqua Senior</h4>
-                            <p>Hidroterapia y ejercicio para adultos mayores. Movilidad articular, equilibrio y socialización.</p>
-                        </div>
-                        <div class="service-item special">
-                            <h4>Aqua Rehab</h4>
-                            <p>Rehabilitación deportiva en piscina. Trabajo con fisioterapeutas certificados.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PRICING -->
-            <div class="pricing-section">
-                <h3>💳 Planes & Precios</h3>
-                <div class="pricing-grid">
-                    <div class="price-card">
-                        <h4>Drop-In</h4>
-                        <div class="price">$45.000</div>
-                        <span class="price-period">por clase</span>
-                        <ul>
-                            <li>1 clase cualquiera</li>
-                            <li>Sin compromiso</li>
-                            <li>Ideal para probar</li>
-                        </ul>
-                    </div>
-                    <div class="price-card">
-                        <h4>Paquete 8</h4>
-                        <div class="price">$280.000</div>
-                        <span class="price-period">8 clases / mes</span>
-                        <ul>
-                            <li>$35.000 por clase</li>
-                            <li>2 clases/semana</li>
-                            <li>Válido 30 días</li>
-                        </ul>
-                    </div>
-                    <div class="price-card featured">
-                        <span class="price-badge">Más Popular</span>
-                        <h4>Ilimitado</h4>
-                        <div class="price">$380.000</div>
-                        <span class="price-period">por mes</span>
-                        <ul>
-                            <li>Clases ilimitadas</li>
-                            <li>Reserva prioritaria</li>
-                            <li>1 invitado gratis/mes</li>
-                            <li>Descuento en juice bar</li>
-                        </ul>
-                    </div>
-                    <div class="price-card">
-                        <h4>Anual VIP</h4>
-                        <div class="price">$3.600.000</div>
-                        <span class="price-period">por año</span>
-                        <ul>
-                            <li>2 meses gratis ($300K/mes)</li>
-                            <li>Todo ilimitado</li>
-                            <li>Eventos exclusivos</li>
-                            <li>Toalla y locker incluido</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="card-grid two">
+          <article class="card">
+            <h3>Ventas B2B prioritarias</h3>
+            <ul>
+              <li>Clubes sociales y campestres.</li>
+              <li>Cajas de compensación con centros recreativos.</li>
+              <li>Conjuntos residenciales premium con piscina y comité de bienestar.</li>
+              <li>Centros deportivos, rehabilitación y medicina del deporte.</li>
+              <li>Operadores de eventos wellness para activaciones corporativas.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Qué evita dispersarnos</h3>
+            <ul>
+              <li>No perseguir piscinas pequeñas o sedes sin presupuesto de marketing.</li>
+              <li>No vender solo el equipo sin certificación ni manual operativo.</li>
+              <li>No depender de clases operadas por Aufit de forma indefinida.</li>
+              <li>Priorizar clientes capaces de comprar 8 a 12 boards por instalación.</li>
+            </ul>
+          </article>
         </div>
-    </section>
+      </section>
 
-    <!-- FINANCIALS -->
-    <section class="section section-dark" id="financiero">
-        <div class="container">
-            <div class="section-header light">
-                <span class="section-tag">07</span>
-                <h2>Proyección Financiera</h2>
-                <p>Números conservadores basados en el mercado caleño</p>
-            </div>
-
-            <!-- STARTUP COSTS -->
-            <div class="financial-block">
-                <h3>📊 Inversión Inicial</h3>
-                <div class="fin-table-wrap">
-                    <table class="fin-table">
-                        <thead>
-                            <tr>
-                                <th>Concepto</th>
-                                <th>Costo (COP)</th>
-                                <th>Notas</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Adecuación de la casa/piscina</td>
-                                <td class="amount">$80.000.000</td>
-                                <td>Remodelación, deck, zona de clases</td>
-                            </tr>
-                            <tr>
-                                <td>Equipos acuáticos</td>
-                                <td class="amount">$60.000.000</td>
-                                <td>Bicicletas acuáticas (10), noodles, tablas SUP, flotadores, sacos</td>
-                            </tr>
-                            <tr>
-                                <td>Equipos zona seca</td>
-                                <td class="amount">$35.000.000</td>
-                                <td>Reformer Pilates (4), telas aéreas, TRX, kettlebells, mats</td>
-                            </tr>
-                            <tr>
-                                <td>Sistema de sonido y ambiente</td>
-                                <td class="amount">$15.000.000</td>
-                                <td>Audio resistente al agua, iluminación, decoración</td>
-                            </tr>
-                            <tr>
-                                <td>Vestieres y duchas</td>
-                                <td class="amount">$30.000.000</td>
-                                <td>2 vestieres completos con lockers</td>
-                            </tr>
-                            <tr>
-                                <td>Recepción y juice bar</td>
-                                <td class="amount">$20.000.000</td>
-                                <td>Mobiliario, equipos, punto de venta</td>
-                            </tr>
-                            <tr>
-                                <td>Tecnología</td>
-                                <td class="amount">$15.000.000</td>
-                                <td>Software de reservas, monitores cardíaco, app, CRM</td>
-                            </tr>
-                            <tr>
-                                <td>Depósito arriendo (3 meses)</td>
-                                <td class="amount">$36.000.000</td>
-                                <td>Ciudad Jardín estimado</td>
-                            </tr>
-                            <tr>
-                                <td>Capital de trabajo (3 meses)</td>
-                                <td class="amount">$60.000.000</td>
-                                <td>Nómina, servicios, marketing inicial</td>
-                            </tr>
-                            <tr>
-                                <td>Marketing de lanzamiento</td>
-                                <td class="amount">$25.000.000</td>
-                                <td>Branding, redes sociales, evento de apertura</td>
-                            </tr>
-                            <tr>
-                                <td>Imprevistos (10%)</td>
-                                <td class="amount">$37.600.000</td>
-                                <td></td>
-                            </tr>
-                            <tr class="total-row">
-                                <td><strong>TOTAL INVERSIÓN INICIAL</strong></td>
-                                <td class="amount"><strong>$413.600.000</strong></td>
-                                <td>≈ USD $95.000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- MONTHLY COSTS -->
-            <div class="financial-block">
-                <h3>📋 Costos Mensuales Operativos</h3>
-                <div class="fin-table-wrap">
-                    <table class="fin-table">
-                        <thead>
-                            <tr>
-                                <th>Concepto</th>
-                                <th>Costo Mensual (COP)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Arriendo</td><td class="amount">$12.000.000</td></tr>
-                            <tr><td>Nómina (6 instructores + 2 admin)</td><td class="amount">$18.000.000</td></tr>
-                            <tr><td>Servicios públicos (agua es clave)</td><td class="amount">$3.500.000</td></tr>
-                            <tr><td>Mantenimiento piscina y equipos</td><td class="amount">$2.500.000</td></tr>
-                            <tr><td>Marketing digital continuo</td><td class="amount">$3.000.000</td></tr>
-                            <tr><td>Seguros y permisos</td><td class="amount">$1.500.000</td></tr>
-                            <tr><td>Insumos (juice bar, limpieza, toallas)</td><td class="amount">$2.000.000</td></tr>
-                            <tr><td>Software y tecnología</td><td class="amount">$800.000</td></tr>
-                            <tr class="total-row">
-                                <td><strong>TOTAL MENSUAL</strong></td>
-                                <td class="amount"><strong>$43.300.000</strong></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- REVENUE PROJECTION -->
-            <div class="financial-block">
-                <h3>📈 Proyección de Ingresos</h3>
-                <div class="revenue-cards">
-                    <div class="rev-card">
-                        <h4>Mes 1-6</h4>
-                        <p class="rev-phase">Lanzamiento</p>
-                        <div class="rev-details">
-                            <p>80 miembros suscritos</p>
-                            <p>40 drop-ins/mes</p>
-                            <p class="rev-amount">Ingreso: $33M/mes</p>
-                            <p class="rev-status negative">Déficit: -$10M/mes</p>
-                        </div>
-                    </div>
-                    <div class="rev-card">
-                        <h4>Mes 7-12</h4>
-                        <p class="rev-phase">Crecimiento</p>
-                        <div class="rev-details">
-                            <p>150 miembros suscritos</p>
-                            <p>80 drop-ins/mes</p>
-                            <p class="rev-amount">Ingreso: $54M/mes</p>
-                            <p class="rev-status positive">Superávit: +$11M/mes</p>
-                        </div>
-                    </div>
-                    <div class="rev-card">
-                        <h4>Mes 13-24</h4>
-                        <p class="rev-phase">Madurez</p>
-                        <div class="rev-details">
-                            <p>220 miembros suscritos</p>
-                            <p>120 drop-ins/mes</p>
-                            <p class="rev-amount">Ingreso: $74M/mes</p>
-                            <p class="rev-status positive">Superávit: +$31M/mes</p>
-                        </div>
-                    </div>
-                    <div class="rev-card">
-                        <h4>Año 3</h4>
-                        <p class="rev-phase">Consolidación</p>
-                        <div class="rev-details">
-                            <p>300+ miembros</p>
-                            <p>Eventos corporativos</p>
-                            <p class="rev-amount">Ingreso: $95M/mes</p>
-                            <p class="rev-status positive">Superávit: +$52M/mes</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- BREAK EVEN CHART -->
-            <div class="financial-block">
-                <h3>📉 Punto de Equilibrio</h3>
-                <div class="breakeven">
-                    <div class="breakeven-bar">
-                        <div class="breakeven-fill" style="width: 0%" id="breakevenBar"></div>
-                        <div class="breakeven-marker" style="left: 75%">
-                            <span>Mes 18</span>
-                        </div>
-                    </div>
-                    <div class="breakeven-labels">
-                        <span>Mes 0</span>
-                        <span>Mes 6</span>
-                        <span>Mes 12</span>
-                        <span>Mes 18</span>
-                        <span>Mes 24</span>
-                    </div>
-                    <p class="breakeven-note">Se alcanza el punto de equilibrio acumulado (recuperación de inversión) aproximadamente en el <strong>mes 18</strong>, con un escenario conservador de crecimiento del 15% mensual en membresías.</p>
-                </div>
-            </div>
-
-            <div class="financial-block">
-                <h3>🧭 Escenarios</h3>
-                <div class="scenario-grid">
-                    <div class="scenario-card">
-                        <h4>Conservador</h4>
-                        <p>110 miembros promedio y baja venta corporativa.</p>
-                        <div class="scenario-metric">Break-even: mes 24-26</div>
-                    </div>
-                    <div class="scenario-card featured">
-                        <h4>Base</h4>
-                        <p>150 miembros promedio, drop-ins constantes y ocupación creciente.</p>
-                        <div class="scenario-metric">Break-even: mes 18</div>
-                    </div>
-                    <div class="scenario-card">
-                        <h4>Agresivo</h4>
-                        <p>180+ miembros, founders exitoso y eventos corporativos recurrentes.</p>
-                        <div class="scenario-metric">Break-even: mes 13-15</div>
-                    </div>
-                </div>
-            </div>
+      <section id="modelo" class="section accent-section">
+        <div class="section-heading">
+          <p class="eyebrow">Modelo de negocio</p>
+          <h2>Vender un sistema completo, no un producto aislado</h2>
         </div>
-    </section>
-
-    <!-- MARKETING -->
-    <section class="section" id="marketing">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">08</span>
-                <h2>Plan de Marketing</h2>
-                <p>Estrategia para posicionar AquaVida como referente fitness en Cali</p>
-            </div>
-
-            <div class="marketing-phases">
-                <!-- PRE-LAUNCH -->
-                <div class="mkt-phase">
-                    <div class="mkt-phase-header">
-                        <span class="mkt-phase-num">Fase 1</span>
-                        <h3>Pre-Lanzamiento (2 meses antes)</h3>
-                    </div>
-                    <div class="mkt-tactics">
-                        <div class="mkt-tactic">
-                            <h4>🔥 Hype en Redes Sociales</h4>
-                            <ul>
-                                <li>Cuenta regresiva en Instagram y TikTok</li>
-                                <li>Videos teaser de la transformación de la casa</li>
-                                <li>"Coming Soon" con lista de espera</li>
-                                <li>Primeros 50 inscritos: 30% descuento primer trimestre</li>
-                            </ul>
-                        </div>
-                        <div class="mkt-tactic">
-                            <h4>🤝 Alianzas con Influencers</h4>
-                            <ul>
-                                <li>5-8 influencers fitness de Cali</li>
-                                <li>1-2 perfiles de maternidad, wellness y fisioterapia</li>
-                                <li>Sesiones exclusivas pre-apertura</li>
-                                <li>Contenido UGC (User Generated Content)</li>
-                                <li>Programa de embajadores</li>
-                            </ul>
-                        </div>
-                        <div class="mkt-tactic">
-                            <h4>📰 PR y Medios</h4>
-                            <ul>
-                                <li>Nota en El País, ADN Cali</li>
-                                <li>Entrevistas en radio/TV local</li>
-                                <li>"Primer gym acuático de Cali"</li>
-                                <li>Invitación a periodistas de bienestar</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- LAUNCH -->
-                <div class="mkt-phase">
-                    <div class="mkt-phase-header">
-                        <span class="mkt-phase-num">Fase 2</span>
-                        <h3>Lanzamiento (Mes 1-3)</h3>
-                    </div>
-                    <div class="mkt-tactics">
-                        <div class="mkt-tactic">
-                            <h4>🎉 Evento de Apertura</h4>
-                            <ul>
-                                <li>Pool party fitness: clases demo gratuitas</li>
-                                <li>DJ en vivo, jugos, snacks saludables</li>
-                                <li>Fotógrafo y videógrafo profesional</li>
-                                <li>Sorteos de membresías</li>
-                            </ul>
-                        </div>
-                        <div class="mkt-tactic">
-                            <h4>📱 Digital Marketing</h4>
-                            <ul>
-                                <li>Instagram Ads segmentados (Cali, 25-55, intereses fitness)</li>
-                                <li>Google Ads: "gym Cali", "yoga Cali", "piscina fitness"</li>
-                                <li>Meta Ads por microzonas: Ciudad Jardín, Pance, Santa Teresita, Granada</li>
-                                <li>TikTok: videos de clases acuáticas (alto potencial viral)</li>
-                                <li>WhatsApp Business para reservas y comunidad</li>
-                            </ul>
-                        </div>
-                        <div class="mkt-tactic">
-                            <h4>🎁 Promos de Lanzamiento</h4>
-                            <ul>
-                                <li>Clase de prueba GRATIS</li>
-                                <li>"Trae a un amigo" — ambos ganan 1 clase</li>
-                                <li>Early bird: plan anual con 3 meses gratis</li>
-                                <li>Corporativo: descuento empresa 20%</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- GROWTH -->
-                <div class="mkt-phase">
-                    <div class="mkt-phase-header">
-                        <span class="mkt-phase-num">Fase 3</span>
-                        <h3>Crecimiento (Mes 4-12)</h3>
-                    </div>
-                    <div class="mkt-tactics">
-                        <div class="mkt-tactic">
-                            <h4>🔄 Retención</h4>
-                            <ul>
-                                <li>Challenges mensuales (30 días aqua fit)</li>
-                                <li>Programa de puntos y recompensas</li>
-                                <li>Comunidad WhatsApp exclusiva</li>
-                                <li>Eventos sociales mensuales (cena saludable, charlas)</li>
-                            </ul>
-                        </div>
-                        <div class="mkt-tactic">
-                            <h4>🏢 B2B y Corporativo</h4>
-                            <ul>
-                                <li>Paquetes wellness empresarial</li>
-                                <li>Team buildings acuáticos</li>
-                                <li>Convenios con empresas de la zona</li>
-                                <li>Seguros de salud / cajas de compensación</li>
-                            </ul>
-                        </div>
-                        <div class="mkt-tactic">
-                            <h4>📊 Data-Driven</h4>
-                            <ul>
-                                <li>NPS mensual a todos los miembros</li>
-                                <li>A/B testing en campañas</li>
-                                <li>Análisis de retención y churn</li>
-                                <li>Optimización de horarios según demanda</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CONTENT STRATEGY -->
-            <div class="content-strategy">
-                <h3>📸 Estrategia de Contenido</h3>
-                <div class="content-grid">
-                    <div class="content-type">
-                        <h4>Instagram</h4>
-                        <p>Feed aspiracional, Reels de clases, Stories diarias, Before/After de miembros</p>
-                        <span class="freq">Post diario + 3-5 Stories</span>
-                    </div>
-                    <div class="content-type">
-                        <h4>TikTok</h4>
-                        <p>Clases acuáticas (alto potencial viral), challenges, behind the scenes</p>
-                        <span class="freq">3-5 videos/semana</span>
-                    </div>
-                    <div class="content-type">
-                        <h4>WhatsApp</h4>
-                        <p>Comunidad de miembros, tips de bienestar, horarios, promociones flash</p>
-                        <span class="freq">Comunicación diaria</span>
-                    </div>
-                    <div class="content-type">
-                        <h4>Google / SEO</h4>
-                        <p>Blog de bienestar, beneficios del aqua fitness, posicionamiento local</p>
-                        <span class="freq">2 artículos/semana</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="launch-playbook">
-                <h3>🚀 Embudo de lanzamiento recomendado</h3>
-                <div class="playbook-grid">
-                    <div class="playbook-item">
-                        <strong>Semana -8 a -5:</strong> lista de espera, formulario y pauta para capturar leads
-                    </div>
-                    <div class="playbook-item">
-                        <strong>Semana -4 a -2:</strong> open house privado con demos de Aqua HIIT y Salsa Splash
-                    </div>
-                    <div class="playbook-item">
-                        <strong>Semana -2 a 0:</strong> cierre de founders con cupos limitados y precio ancla
-                    </div>
-                    <div class="playbook-item">
-                        <strong>Primeros 90 días:</strong> foco en retención, testimonios y corporativo local
-                    </div>
-                </div>
-            </div>
+        <div class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Componente</th>
+                <th>Precio estimado</th>
+                <th>Rol de Aufit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10 Aqua Boards</td>
+                <td>$70M COP</td>
+                <td>Venta principal con margen sobre inventario del distribuidor.</td>
+              </tr>
+              <tr>
+                <td>Certificación de instructores</td>
+                <td>$5M COP</td>
+                <td>Entrenar al equipo local y dejar metodología estándar.</td>
+              </tr>
+              <tr>
+                <td>Kit operativo e infladores</td>
+                <td>$3M COP</td>
+                <td>Tethers, infladores, checklist y manuales básicos.</td>
+              </tr>
+              <tr>
+                <td>Lanzamiento y marketing</td>
+                <td>$8M COP</td>
+                <td>Big event con clases demo, healthy drinks, música y contenido.</td>
+              </tr>
+              <tr>
+                <td>Seguimiento anual opcional</td>
+                <td>$6M COP</td>
+                <td>Auditoría, refresh de instructores y soporte comercial.</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-    </section>
+        <p class="footnote">
+          Supuesto base de esta página: cada sede compra 10 plataformas. Costo unitario
+          informado por ustedes: $5M COP. Precio de venta objetivo: $7M COP.
+        </p>
+      </section>
 
-    <!-- LEGAL -->
-    <section class="section section-alt" id="legal">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">09</span>
-                <h2>Aspectos Legales & Regulatorios</h2>
-                <p>Lo que necesitas para operar legalmente en Cali</p>
-            </div>
-
-            <div class="legal-grid">
-                <div class="legal-card">
-                    <h4>📋 Constitución Legal</h4>
-                    <ul>
-                        <li>Registro de SAS (Sociedad por Acciones Simplificada) en Cámara de Comercio de Cali</li>
-                        <li>RUT ante la DIAN</li>
-                        <li>Registro mercantil</li>
-                        <li>Resolución de facturación electrónica</li>
-                    </ul>
-                </div>
-                <div class="legal-card">
-                    <h4>🏗️ Permisos y Licencias</h4>
-                    <ul>
-                        <li>Concepto de uso de suelo (Planeación Municipal)</li>
-                        <li>Cambio de uso o validación de compatibilidad comercial del inmueble</li>
-                        <li>Licencia sanitaria (Secretaría de Salud)</li>
-                        <li>Permiso de Bomberos</li>
-                        <li>Concepto sanitario para piscina</li>
-                        <li>Registro INVIMA (si venta de alimentos)</li>
-                    </ul>
-                </div>
-                <div class="legal-card">
-                    <h4>🏊 Normativa de Piscinas</h4>
-                    <ul>
-                        <li>Cumplimiento Ley 1209 de 2008 (seguridad en piscinas)</li>
-                        <li>Plan de Saneamiento Básico</li>
-                        <li>Salvavidas certificado en horario de operación</li>
-                        <li>Control de calidad del agua (pH, cloro)</li>
-                        <li>Señalización de profundidad</li>
-                    </ul>
-                </div>
-                <div class="legal-card">
-                    <h4>👥 Laboral</h4>
-                    <ul>
-                        <li>Contratos laborales o de prestación de servicios</li>
-                        <li>ARL para instructores (riesgo alto)</li>
-                        <li>Certificaciones de instructores (primeros auxilios, RCP)</li>
-                        <li>Seguro de responsabilidad civil</li>
-                        <li>Política de protección de datos (Ley 1581)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="legal-timeline">
-                <h3>⏱️ Timeline de Trámites (estimado)</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <span class="timeline-time">Semana 1-2</span>
-                        <span class="timeline-desc">Constitución SAS y RUT</span>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-time">Semana 2-4</span>
-                        <span class="timeline-desc">Uso de suelo y licencia sanitaria</span>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-time">Semana 3-6</span>
-                        <span class="timeline-desc">Adecuación del inmueble</span>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-time">Semana 5-8</span>
-                        <span class="timeline-desc">Permisos de bomberos y piscina</span>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-time">Semana 6-10</span>
-                        <span class="timeline-desc">Contratación y capacitación</span>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-time">Semana 8-12</span>
-                        <span class="timeline-desc">Pre-lanzamiento y apertura</span>
-                    </div>
-                </div>
-            </div>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Unit economics</p>
+          <h2>Economía simple y clara por sede</h2>
         </div>
-    </section>
-
-    <!-- SWOT -->
-    <section class="section" id="swot">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">10</span>
-                <h2>Análisis DOFA</h2>
-            </div>
-            <div class="swot-grid">
-                <div class="swot-card strengths">
-                    <h3>💪 Fortalezas</h3>
-                    <ul>
-                        <li>Concepto único e inexistente en Cali</li>
-                        <li>Clima ideal para actividades acuáticas todo el año</li>
-                        <li>Modelo de suscripción con alta retención</li>
-                        <li>Bajo impacto articular (atrae más demografías)</li>
-                        <li>Alto potencial de contenido viral</li>
-                        <li>Experiencia premium e instagrameable</li>
-                    </ul>
-                </div>
-                <div class="swot-card weaknesses">
-                    <h3>⚠️ Debilidades</h3>
-                    <ul>
-                        <li>Alta inversión inicial en equipos acuáticos</li>
-                        <li>Dependencia de instructores especializados (escasos)</li>
-                        <li>Costos de mantenimiento de piscina</li>
-                        <li>Capacidad limitada por clase vs. gym tradicional</li>
-                        <li>Concepto nuevo requiere educación del mercado</li>
-                    </ul>
-                </div>
-                <div class="swot-card opportunities">
-                    <h3>🚀 Oportunidades</h3>
-                    <ul>
-                        <li>Cero competencia directa en Cali</li>
-                        <li>Crecimiento del wellness post-pandemia</li>
-                        <li>Turismo de bienestar en Valle del Cauca</li>
-                        <li>Expansión a Bogotá, Medellín, Barranquilla</li>
-                        <li>Partnerships con hoteles y centros de rehabilitación</li>
-                        <li>Eventos corporativos y team building</li>
-                    </ul>
-                </div>
-                <div class="swot-card threats">
-                    <h3>🔴 Amenazas</h3>
-                    <ul>
-                        <li>Entrada de competidores con más capital</li>
-                        <li>Regulación estricta de piscinas públicas</li>
-                        <li>Fluctuaciones económicas que afecten gasto discrecional</li>
-                        <li>Percepción de "solo para ricos"</li>
-                        <li>Problemas de suministro de agua en épocas de sequía</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="metric-grid">
+          <article class="metric-card">
+            <span class="metric-kicker">Ingreso inicial</span>
+            <strong>$86M COP</strong>
+            <p>10 boards + certificación + kit + evento de lanzamiento.</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-kicker">Costo estimado</span>
+            <strong>$56M COP</strong>
+            <p>Inventario, ejecución del evento, materiales y delivery operativo.</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-kicker">Utilidad bruta inicial</span>
+            <strong>$30M COP</strong>
+            <p>Antes de gastos fijos del equipo central de Aufit.</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-kicker">Ingreso recurrente</span>
+            <strong>$6M COP/año</strong>
+            <p>Por QA, recertificación, refresh comercial y monitoreo de estándares.</p>
+          </article>
         </div>
-    </section>
+      </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <h3>🏊‍♀️ AquaVida Studio</h3>
-                    <p>Plan de Negocio Confidencial — 2026</p>
-                </div>
-                <div>
-                    <p class="footer-disclaimer">Este documento es confidencial y para uso exclusivo de los socios fundadores. Las proyecciones financieras son estimados basados en investigación de mercado y no constituyen garantía de resultados.</p>
-                </div>
-            </div>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Competencia</p>
+          <h2>Contra quién competimos de verdad</h2>
         </div>
-    </footer>
+        <div class="card-grid two">
+          <article class="card">
+            <h3>Competencia directa</h3>
+            <ul>
+              <li>AquaPhysical / FloatFit, marca global de clases sobre AquaBase.</li>
+              <li>NSPiration Mat, Glide FIT, InnovaAquaFit y otras plataformas fitness flotantes.</li>
+              <li>Distribuidores que venden la tabla, pero no el sistema comercial completo.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Competencia indirecta</h3>
+            <ul>
+              <li>Aquagym tradicional y programación estándar de piscina en hoteles y clubes.</li>
+              <li>Estudios de yoga o pilates que hacen eventos esporádicos en piscinas.</li>
+              <li>Agencias de wellness corporativo que montan activaciones sin licencia operativa continua.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="positioning">
+          <h3>Posicionamiento recomendado</h3>
+          <p>
+            Aufit debe venderse como el <strong>socio de lanzamiento Aqua Board en
+            Colombia</strong>: equipo + certificación + evento + playbook + seguimiento.
+            Esa combinación es más defendible que competir solo por precio del inflable.
+          </p>
+        </div>
+      </section>
 
-</div>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Addressable market</p>
+          <h2>TAM, SAM y primer objetivo realista</h2>
+        </div>
+        <div class="card-grid three">
+          <article class="card">
+            <h3>TAM conceptual</h3>
+            <p class="large-number">~240 venues</p>
+            <p>
+              Estimación bottom-up para las 4 ciudades: hoteles con piscina,
+              universidades/IES, clubes, cajas, residenciales premium y centros
+              deportivos aptos para una instalación de 8 a 12 boards.
+            </p>
+          </article>
+          <article class="card">
+            <h3>SAM inicial</h3>
+            <p class="large-number">~$20.6B COP</p>
+            <p>
+              240 venues x $86M COP de paquete inicial. Es el mercado servible para la
+              oferta actual sin necesidad de expandirse fuera de Bogotá, Medellín,
+              Cartagena y Cali.
+            </p>
+          </article>
+          <article class="card">
+            <h3>SOM 36 meses</h3>
+            <p class="large-number">24 sedes</p>
+            <p>
+              Meta base razonable si se cierran pocos clientes ancla por ciudad y luego
+              se expande por referidos, demostración y prueba social.
+            </p>
+          </article>
+        </div>
+      </section>
 
-<script src="app.js"></script>
-</body>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Proyección</p>
+          <h2>Ingresos base a 3 años</h2>
+        </div>
+        <div class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Año</th>
+                <th>Nuevas sedes</th>
+                <th>Ingresos</th>
+                <th>Utilidad bruta estimada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Año 1</td>
+                <td>4</td>
+                <td>$344M COP</td>
+                <td>$120M COP</td>
+              </tr>
+              <tr>
+                <td>Año 2</td>
+                <td>8</td>
+                <td>$712M COP</td>
+                <td>$256M COP</td>
+              </tr>
+              <tr>
+                <td>Año 3</td>
+                <td>12</td>
+                <td>$1.104B COP</td>
+                <td>$408M COP</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="footnote">
+          Supuestos: 10 boards por sede, paquete inicial de $86M COP, utilidad bruta de
+          $30M COP por nueva sede y soporte anual de $6M COP para sedes activas. Esto es
+          un escenario base, no agresivo.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Go-to-market</p>
+          <h2>Cómo vender las primeras 4 sedes</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span>01</span>
+            <div>
+              <h3>Conseguir dos sedes vitrina</h3>
+              <p>
+                Una en Cartagena o Medellín para turismo y una en Bogotá o Cali para
+                mercado local. La meta es demostrar ocupación, contenido y percepción premium.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span>02</span>
+            <div>
+              <h3>Vender evento inaugural como arma comercial</h3>
+              <p>
+                Clase demo, influencers locales, bebidas saludables, DJs suaves,
+                prensa local, reels y fotografía. La inauguración debe generar demanda,
+                no solo inaugurar.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span>03</span>
+            <div>
+              <h3>Certificar instructores internos del cliente</h3>
+              <p>
+                Aufit entrena y entrega protocolo. El hotel o club opera las clases
+                después de la compra. Eso mantiene el modelo escalable.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span>04</span>
+            <div>
+              <h3>Convertir cada instalación en canal de referidos</h3>
+              <p>
+                Caso de éxito, video corto, before/after comercial, cifras de asistencia
+                y playbook. La sede instalada se vuelve showroom para nuevos compradores.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section sources">
+        <div class="section-heading">
+          <p class="eyebrow">Research inputs</p>
+          <h2>Fuentes usadas para orientar esta página</h2>
+        </div>
+        <ul class="source-list">
+          <li>
+            <a href="https://www.mineducacion.gov.co/portal/salaprensa/Comunicados/425173:Cifras-oficiales-validan-el-exito-del-modelo-de-educacion-superior-del-Gobierno-del-presidente-Gustavo-Petro" target="_blank" rel="noreferrer">
+              Ministerio de Educación: 2.553.560 estudiantes matriculados en educación superior en 2024
+            </a>
+          </li>
+          <li>
+            <a href="https://cotelcoant.seadog.com.co/wp-content/uploads/2025/04/Informe-gestion-cotelco-antioquia-2024_compressed.pdf" target="_blank" rel="noreferrer">
+              Cotelco Antioquia: ocupación 2024 en Medellín 67,6%, Antioquia 63,0%; referencia nacional Cartagena 67,89% y Bogotá 63,38%
+            </a>
+          </li>
+          <li>
+            <a href="https://bogota.gov.co/node/257672" target="_blank" rel="noreferrer">
+              Bogotá Tourism Observatory: actividad turística y ocupación hotelera de Bogotá
+            </a>
+          </li>
+          <li>
+            <a href="https://www.aquaphysical.com/the-aquabase" target="_blank" rel="noreferrer">
+              AquaPhysical / AquaBase: referencia de competidor directo y uso en hoteles y health clubs
+            </a>
+          </li>
+          <li>
+            <a href="https://floatfit.com/wp-content/uploads/2019/01/FloatFit-Brand-Style-Guide-10.1.2019.pdf" target="_blank" rel="noreferrer">
+              FloatFit: ejemplo de posicionamiento internacional de clases grupales sobre plataforma flotante
+            </a>
+          </li>
+          <li>
+            <a href="https://www.nspsurfboards.com/product/sup/nspiration-mat/" target="_blank" rel="noreferrer">
+              NSPiration Mat: otra referencia internacional de plataformas fitness flotantes
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
